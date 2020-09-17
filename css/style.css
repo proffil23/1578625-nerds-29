@@ -83,6 +83,14 @@ img {
   background-color: var(--basic-red);
   border: none;
 }
+.button-web {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+}
 .button-applications {
   font: inherit;
   text-align: center;
@@ -104,6 +112,15 @@ img {
   border-radius: 3px;
 }
 .button:active {
+  background: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
+}
+.button-web:hover {
+  background: #E74246;
+  border-radius: 3px;
+}
+.button-web:active {
   background: #D7373B;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
@@ -172,7 +189,9 @@ img {
 .costumers-list {
   list-style: none;
 }
-
+.costumers-logo {
+  opacity 0.2;
+}
 /* footer */
 
 .title-contacts {
