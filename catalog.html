@@ -3,115 +3,120 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
-    <header>
-      <nav>
-          <a href="index.html">
-              <img src="img/nerds-logo.svg">
+  <body class="catalog-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+          <a href="index.html" class="main-header-logo">
+            <img src="img/nerds-logo.svg">
           </a>
-        <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <a href="#">Корзина</a></li>
+          <ul class="site-navigation">
+           <li><a href="blank.html">Студия</a></li>
+           <li><a href="#">Клиенты</a></li>
+           <li><a href="catalog.html">Магазин</a></li>
+           <li><a href="#">Контакты</a></li>
+          </ul>
+          <a class="cart" href="#">Корзина</a>
       </nav>
     </header>
-
-    <main>
+    <main class="catalog">
+      <section class="catalog-title">
         <h1>Магазин готовых шаблонов</h1>
-        <section>
+      </section>
+        <section class="filter-cost">
           <h2>СТОИМОСТЬ:</h2>
           <h2>СЕТКА:</h2>
-          <ul>
-            <li>Адаптивная</li>
-            <li>Фиксированная</li>
-            <li>Резиновая</li>
+          <ul class="cost-list">
+            <li class="cost-item">Адаптивная</li>
+            <li class="cost-item">Фиксированная</li>
+            <li class="cost-item">Резиновая</li>
           </ul>
           <h2>ОСОБЕННОСТИ:</h2>
-          <ul>
-            <li>Слайдер</li>
-            <li>Блок преимуществ</li>
-            <li>Новости</li>
-            <li>Галерея</li>
-            <li>Корзина</li>
+          <ul class="cost-list">
+            <li class="cost-item">Слайдер</li>
+            <li class="cost-item">Блок преимуществ</li>
+            <li class="cost-item">Новости</li>
+            <li class="cost-item">Галерея</li>
+            <li class="cost-item">Корзина</li>
           </ul>
+          <button type="submit" class="cost-button">Показать</button>
         </section>
-        <section>
+        <section class="sort">
           <h2>СОРТИРОВАТЬ:</h2>
-          <ul>
-            <li>
-              <a href="#">ПО ЦЕНЕ</a>
+          <ul class="sort-list">
+            <li class="sort-item">
+              <a class="button-sort" href="#">ПО ЦЕНЕ</a>
             </li>
-            <li>
-              <a href="#">ПО ТИПУ</a>
+            <li class="sort-item">
+              <a class="button-sort" href="#">ПО ТИПУ</a>
             </li>
-            <li>
-              <a href="#">ПО НАЗВАНИЮ</a>
+            <li class="sort-item">
+              <a class="button-sort" href="#">ПО НАЗВАНИЮ</a>
             </li>
           </ul>
         </section>
-        <section>
+        <section class="projects">
           <h2>Проекты сайтов</h2>
-          <ul>
-             <li>
+          <ul class="project-list">
+             <li class="project-item">
                 <a href="#">
                 <p>
                 <img src="#" width="358" height="578" alt="Сайт Sedona">
                 </p>
                 </a>
              </li>
-             <li>
+             <li class="project-item">
               <a href="#">
                 <p>
                 <img src="#" width="358" height="578" alt="Сайт Pink">
                 </p>
                 </a>
              </li>
-             <li>
+             <li class="project-item">
               <a href="#">
                 <p>
                 <img src="#" width="358" height="578" alt="Сайт Borodinski">
                 </p>
                 </a>
              </li>
-             <li>
+             <li class="project-item">
                 <a href="#">
                 <p>
                 <img src="#" width="358" height="578" alt="Сайт Mishka">
                 </p>
                 </a>
               </li>
-              <li>
+              <li class="project-item">
                  <a href="#">
                  <p>
                  <img src="#" width="358" height="578" alt="Сайт A+">
                  </p>
                  </a>
               </li>
-              <li>
+              <li class="project-item">
                   <a href="#">
                   <p>
                   <img src="#" width="358" height="578" alt="Сайт КВАСТ">
                   </p>
                   </a>
-      </li>
-    </ul>
-          <ul>
+              </li>
+          </ul>
+          <ul class="page-list">
             <li>
-              <a>1</a>
+              <a class="button-page">1</a>
             </li>
             <li>
-              <a href="#">2</a>
+              <a class="button-page" href="#">2</a>
             </li>
             <li>
-              <a href="#">3</a>
+              <a class="button-page" href="#">3</a>
             </li>
             <li>
-              <a href="#">СЛЕДУЮЩАЯ</a>
+              <a class="button-page-next" href="#">СЛЕДУЮЩАЯ</a>
             </li>
           </ul>
         </section>
@@ -119,37 +124,35 @@
 
     </main>
 
-    <footer>
-        <section>
-            <h2>NЁRDS DESIGN STUDIO</h2>
-            <p>191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д19/8<br>
-                тел. +7(812)275-75-75
-            </p>
-                <input type="button" value="НАПИШИТЕ НАМ">
-        </section>
-        <section>
-        <a>
+    <footer class="page-footer main-footer">
+      <section class="contacts">
+        <h2 class="title-contacts">NЁRDS DESIGN STUDIO</h2>
+          <p class="address-contacts">191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д19/8<br>
+             тел. <a class="phone-contacts" href="tel:+78122757575">+7(812)275-75-75</a>
+          </p>
+          <a class="button" href="#">НАПИШИТЕ НАМ</a>
+          <a>
             <img src="img/map 1.png">
-        </a>
-    </section>
-    <section>
-        <ul>
-            <li>
-                <a href="#">Вконтакте</a>
-            </li>
-            <li>
-                <a href="#">Фейсбук</a>
-            </li>
-            <li>
-                <a href="#">Инстаграм</a>
-            </li>
+          </a>
+      </section>
+      <section class="footer-socials">
+        <ul class="social-list">
+          <li>
+            <a class="social-button" href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
         </ul>
-    </section>
-    <section>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-    </section>
+      </section>
+      <section class="footer-promo">
+        <h2 class="promo-title">Давайте дружить, это выгодно!</h2>
+          <p class="promo">Скидка 10% для друзей из социальных сетей</p>
+      </section>
     </footer>
   </body>
 </html>
