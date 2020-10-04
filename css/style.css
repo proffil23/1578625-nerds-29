@@ -51,6 +51,8 @@ img {
 }
 
 .site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -67,6 +69,7 @@ img {
 /* header background */
 
 .main-header {
+  width: 100%;
   background-color: var(--basic-light-gray);
 }
 .slider {
@@ -76,6 +79,9 @@ img {
   margin: 0 auto;
 }
 
+.main-slide {
+  background-color: var(--basic-light-gray);
+}
 .slider-img {
   justify-self: right;
 }
