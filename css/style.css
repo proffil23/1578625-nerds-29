@@ -36,20 +36,32 @@ img {
 /* Main navigation */
 
 .main-navigation {
+  display: grid;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
   background-color: transparent;
 }
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  width: 1157px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 /* cart */
 
 .site-navigation a,
 .cart a {
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
 
 /* header background */
@@ -58,12 +70,35 @@ img {
   background-color: var(--basic-light-gray);
 }
 .slider {
+  display: grid;
   background-color: var(--basic-light-gray);
+  width: 1157px;
+  margin: 0 auto;
+}
+
+.slider-img {
+  justify-self: right;
+}
+
+/* container */
+
+.container {
+  width: 1157px;
+  margin: 0 auto;
 }
 
 /* products */
 
+.products {
+  margin-bottom: 80px;
+
+}
 .products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .products-item h4 {
@@ -75,6 +110,7 @@ img {
 }
 
 /* button */
+
 .button {
   font: inherit;
   text-align: center;
@@ -144,6 +180,12 @@ img {
   border-radius: 3px;
 }
 
+/* index-columns */
+
+.index-columns {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+}
 
 /* aside */
 
@@ -192,6 +234,10 @@ img {
 .costumers-logo {
   opacity: 0.2;
 }
+.costumers-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /* footer */
 
 .title-contacts {
@@ -222,6 +268,28 @@ img {
   color: var(--basic-gray);
   font-size: 16px;
   line-height: 22px;
+}
+.main-footer {
+  margin-top: 80px;
+}
+
+.map {
+  width: 100%;
+  justify-self: center;
+}
+.footer-socials-promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1157px;
+  margin: 0 auto;
+}
+.footer-social {
+  width: 260px;
+  justify-self: center;
+}
+.footer-promo {
+  width: 860px;
+  justify-self: left;
 }
 
 /* catalog */
@@ -342,4 +410,16 @@ img {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
   opacity: 0.3;
+}
+
+/* grid */
+
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
