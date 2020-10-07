@@ -322,7 +322,7 @@ img {
 .page-catalog {
   display: grid;
   width: 1157px;
-  grid-template-columns: 260px 1fr 1fr;
+  grid-template-columns: 260px 1fr;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -341,6 +341,17 @@ img {
   font-size: 16px;
   line-height: 19px;
 }
+.sort-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sort {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+
+}
 .sort-list {
   font-weight: bold;
   font-size: 18px;
@@ -348,11 +359,7 @@ img {
   text-transform: uppercase;
   list-style: none;
   color: var(--basic-black);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .sort-item {
   list-style: none;
