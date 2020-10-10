@@ -384,6 +384,10 @@ img {
   display: grid;
   width: 1157px;
   margin: 0 auto;
+  text-align: center;
+}
+.name-catalog {
+  font-size: 55px;
 }
 
 .page-catalog {
@@ -391,9 +395,29 @@ img {
   width: 1157px;
   grid-template-columns: 260px 1fr;
   margin: 0 auto;
+  margin-top: 40px;
   padding: 0 10px;
 }
+.filter-cost {
+  width: 260px;
+}
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  border: none;
+}
 
+.legend {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.filter ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 .cost-list {
   color: var(--basic-black);
   list-style: none;
@@ -406,17 +430,25 @@ img {
 .cost-item {
   color: var(--basic-dark-blue);
   font-size: 16px;
-  line-height: 19px;
+  line-height: 30px;
 }
 .sort {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   width: 760px;
-  margin: 0;
-  padding: 0;
+  margin-left: 140px;
+}
 
+.sort-name {
+  width: 360px;
 }
 .sort-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 360px;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 40px;
+  padding: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -424,10 +456,6 @@ img {
   list-style: none;
   color: var(--basic-black);
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 21px auto;
-  padding: 0;
 }
 .sort-item {
   list-style: none;
@@ -436,19 +464,37 @@ img {
   font-size: 14px;
   line-height: 18px;
 }
+
 .project-list {
-  display: grid;
-  width:760px;
-  column-gap: 42px;
-  margin: 0 auto;
-  grid-template-columns: 358px 358px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
+  list-style: none;
 }
 .page-list {
   display: grid;
   width:760px;
   column-gap: 11px;
-  margin: 55px auto;
+  list-style: none;
+  margin-left: 140px;
+  padding: 0;
   grid-template-columns: min-content min-content min-content min-content;
+}
+.project-item {
+  width: 358px;
+  margin-left: 140px;
+  margin-right: 40px;
+  margin-bottom: 31px;
+}
+.project-item:nth-child(2n) {
+  margin-right: 0;
+  margin-left: 0;
+}
+.catalog-item-image {
+  width: 358px;
+  height: 578px;
 }
 .cost-button {
   font: inherit;

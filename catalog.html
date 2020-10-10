@@ -34,19 +34,33 @@
     <main class="catalog">
       <section class="catalog-title">
         <div class="name-title">
-        <h1>Магазин готовых шаблонов</h1>
+        <h1 class="name-catalog">Магазин готовых шаблонов</h1>
       </div>
       </section>
       <div class="page-catalog">
         <section class="filter-cost">
           <h2>СТОИМОСТЬ:</h2>
-          <h2>СЕТКА:</h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+          <h2 class="legend">СЕТКА:</h2>
           <ul class="cost-list">
-            <li class="cost-item">Адаптивная</li>
-            <li class="cost-item">Фиксированная</li>
-            <li class="cost-item">Резиновая</li>
+            <li class="cost-item filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="cost-group" value="adaptive" id="filter-adaptive">
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="cost-item filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="cost-group" value="fix" id="filter-fix">
+              <label for="filter-fix">Фиксированная</label>
+            </li>
+            <li class="cost-item filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="cost-group" value="stretch" id="filter-stretch">
+              <label for="filter-stretch">Резиновая</label>
+            </li>
+
           </ul>
-          <h2>ОСОБЕННОСТИ:</h2>
+        </fieldset>
+        <fieldset>
+          <h2 class="legend">ОСОБЕННОСТИ:</h2>
           <ul class="cost-list">
             <li class="cost-item filter-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
@@ -64,11 +78,13 @@
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart" id="filter-cart" checked>
             <label for="filter-cart">Корзина</label></li>
           </ul>
+        </fieldset>
           <button type="submit" class="cost-button">Показать</button>
+        </form>
         </section>
         <div class="sort-catalog">
         <section class="sort">
-          <h2>СОРТИРОВАТЬ:</h2>
+          <h2 class="sort-name">СОРТИРОВАТЬ:</h2>
           <ul class="sort-list">
             <li class="sort-item">
               <a class="button-sort" href="#">ПО ЦЕНЕ</a>
@@ -78,8 +94,16 @@
             </li>
             <li class="sort-item">
               <a class="button-sort" href="#">ПО НАЗВАНИЮ</a>
-              <img src="img/icon-down-dir.svg" width="11" height="10">
+            </li>
+            <li>
+              <a class="button-sort" href="#">
               <img src="img/icon-up-dir.svg" width="11" height="10">
+              </a>
+            </li>
+            <li>
+              <a class="button-sort" href="#">
+              <img src="img/icon-down-dir.svg" width="11" height="10">
+              </a>
             </li>
           </ul>
         </section>
@@ -88,7 +112,7 @@
           <ul class="project-list">
              <li class="project-item">
                 <a href="#">
-                <p>
+                <p class="catalog-item-image">
                 <img src="img/browser.png" width="360" height="40">
                 <img src="img/Sedona Group.jpg" width="358" height="578" alt="Сайт Sedona">
                 </p>
@@ -96,7 +120,7 @@
              </li>
              <li class="project-item">
               <a href="#">
-                <p>
+                <p class="catalog-item-image">
                 <img src="img/browser.png" width="360" height="40">
                 <img src="img/Pink Group.jpg" width="358" height="578" alt="Сайт Pink">
                 </p>
@@ -104,7 +128,7 @@
              </li>
              <li class="project-item">
               <a href="#">
-                <p>
+                <p class="catalog-item-image">
                 <img src="img/browser.png" width="360" height="40">
                 <img src="img/Borodinski Group.jpg" width="358" height="578" alt="Сайт Borodinski">
                 </p>
@@ -120,7 +144,7 @@
               </li>
               <li class="project-item">
                  <a href="#">
-                 <p>
+                 <p class="catalog-item-image">
                  <img src="img/browser.png" width="360" height="40">
                  <img src="img/A+ Group.jpg" width="358" height="578" alt="Сайт A+">
                  </p>
@@ -128,7 +152,7 @@
               </li>
               <li class="project-item">
                   <a href="#">
-                  <p>
+                  <p class="catalog-item-image">
                   <img src="img/browser.png" width="360" height="40">
                   <img src="img/Kvast Group.jpg" width="358" height="578" alt="Сайт КВАСТ">
                   </p>
