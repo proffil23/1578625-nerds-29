@@ -11,10 +11,11 @@
   <body class="catalog-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="main-navigation-wrapper">
           <a href="index.html" class="main-header-logo">
             <img src="img/nerds-logo.svg" width="159.87" height="65.02">
           </a>
+          <div class="main-navigation-wrapper">
+          <div class="site-navigation-cart">
           <ul class="site-navigation">
            <li><a href="blank.html">Студия</a></li>
            <li><a href="#">Клиенты</a></li>
@@ -25,6 +26,7 @@
           <a class="cart" href="#">
             <img src="img/cart-icon.svg" width="15" height="11">
             Корзина</a>
+          </div>
           </div>
         </div>
       </nav>
@@ -46,16 +48,25 @@
           </ul>
           <h2>ОСОБЕННОСТИ:</h2>
           <ul class="cost-list">
-            <li class="cost-item">Слайдер</li>
-            <li class="cost-item">Блок преимуществ</li>
-            <li class="cost-item">Новости</li>
-            <li class="cost-item">Галерея</li>
-            <li class="cost-item">Корзина</li>
+            <li class="cost-item filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label></li>
+            <li class="cost-item filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="block-advantages" id="filter-block-advantages" checked>
+            <label for="filter-block-advantages">Блок преимуществ</label></li>
+            <li class="cost-item filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">Новости</label></li>
+            <li class="cost-item filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery" checked>
+            <label for="filter-gallery">Галерея</label></li>
+            <li class="cost-item filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart" id="filter-cart" checked>
+            <label for="filter-cart">Корзина</label></li>
           </ul>
           <button type="submit" class="cost-button">Показать</button>
         </section>
         <div class="sort-catalog">
-        <div class="main-sort">
         <section class="sort">
           <h2>СОРТИРОВАТЬ:</h2>
           <ul class="sort-list">
@@ -72,8 +83,6 @@
             </li>
           </ul>
         </section>
-        </div>
-        <div class="main-projects">
         <section class="projects">
           <!-- <h2>Проекты сайтов</h2> -->
           <ul class="project-list">
@@ -141,7 +150,6 @@
             </li>
           </ul>
         </section>
-        </div>
       </div>
       </div>
 
@@ -154,7 +162,7 @@
              ул. Б. Конюшенная, д19/8<br>
              тел. <a class="phone-contacts" href="tel:+78122757575">+7(812)275-75-75</a>
           </p>
-          <a class="button" href="#">НАПИШИТЕ НАМ</a>
+          <a class="button button-contacts" href="#">НАПИШИТЕ НАМ</a>
           <a>
             <img class="map" src="img/map 1.png">
             <img src="img/map-marker 1.png" width="231" height="190" alt="Указатель на карте">
@@ -165,18 +173,18 @@
         <ul class="social-list">
           <li>
             <a class="social-button" href="#">
-              <img src="img/vk-icon.svg" width="26.01" height="15">
-              Вконтакте</a>
+              <img src="img/vk-icon.svg" width="26.01" height="15"
+              alt="Вконтакте"></a>
           </li>
           <li>
             <a class="social-button" href="#">
-              <img src="img/fb-icon.svg" width="12" height="22">
-              Фейсбук</a>
+              <img src="img/fb-icon.svg" width="12" height="22"
+              alt="Фейсбук"></a>
           </li>
           <li>
             <a class="social-button" href="#">
-              <img src="img/insta-icon.svg" width="21" height="21">
-              Инстаграм</a>
+              <img src="img/insta-icon.svg" width="21" height="21"
+              alt="Инстаграм"></a>
           </li>
         </ul>
       </section>
@@ -184,7 +192,7 @@
         <h2 class="promo-title">Давайте дружить, это выгодно!</h2>
           <p class="promo">Скидка 10% для друзей из социальных сетей</p>
       </section>
-      </div>
+    </div>
     </footer>
   </body>
 </html>
