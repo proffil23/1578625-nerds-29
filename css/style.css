@@ -161,11 +161,13 @@ img {
   background-image: url(../img/nerds-index-slide2\ 1.png);
   background-repeat: no-repeat;
   background-position: top right;
+  display: none;
 }
 .slider-item:nth-child(3) {
   background-image: url(../img/nerds-index-slide3\ 1.png);
   background-repeat: no-repeat;
   background-position: top right;
+  display: none;
 }
 .slider-list {
   margin: 0;
@@ -703,8 +705,14 @@ opacity: 0.1;
   width: 860px;
 }
 /*popup*/
-.popup {
+.active {
   display: block;
+}
+.modal-show {
+  display: block;
+}
+.popup {
+  display: none;
   position: fixed;
   z-index: 100;
   top: 0;
