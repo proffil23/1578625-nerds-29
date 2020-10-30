@@ -1,5 +1,5 @@
 var link = document.querySelector('.button-contacts');
-var popup = document.querySelector('.active');
+var popup = document.querySelector('.popup');
 var close = popup.querySelector('.button-close');
 
 var form = popup.querySelector('.appointment-form');
@@ -11,7 +11,7 @@ var storage = localStorage.getItem('popup-input-name');
 // Открытие окна
 link.addEventListener('click', function (event) {
     event.preventDefault();
-    popup.classList.add('active');
+    popup.classList.add('popup');
       if (storage) {
         login.value = storage;
         mail.focus();
@@ -24,7 +24,7 @@ link.addEventListener('click', function (event) {
 // закрытие окна
 close.addEventListener('click', function (event) {
     event.preventDefault();
-    popup.classList.remove('active');
+    popup.classList.remove('popup');
     popup.classList.remove('popup-error');
 });
 
@@ -45,8 +45,8 @@ form.addEventListener('submit', function (event) {
 // закрытие на esc
 window.addEventListener('keydown', function (event) {
     if (event.keyCode === 27) {
-        if (popup.classList.contains('active')) {
-            popup.classList.remove('active');
+        if (popup.classList.contains('popup')) {
+            popup.classList.remove('popup');
             popup.classList.remove('popup-error');
         }
     }

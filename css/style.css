@@ -152,6 +152,10 @@ img {
   color: var(--basic-black);
   margin-bottom: 80px;
 }
+.slider-item {
+  display: none;
+}
+
 .slider-item:nth-child(1) {
   background-image: url(../img/nerds-index-slide1\ 1.png);
   background-repeat: no-repeat;
@@ -161,13 +165,11 @@ img {
   background-image: url(../img/nerds-index-slide2\ 1.png);
   background-repeat: no-repeat;
   background-position: top right;
-  display: none;
 }
 .slider-item:nth-child(3) {
   background-image: url(../img/nerds-index-slide3\ 1.png);
   background-repeat: no-repeat;
   background-position: top right;
-  display: none;
 }
 .slider-list {
   margin: 0;
@@ -209,8 +211,8 @@ img {
 .slider-control-dots {
   position: absolute;
   bottom: 96px;
-  left: 536px;
-  width: 88px;
+  left: 630px;
+  width: 100px;
   height: 18px;
   margin-left: -100px;
   text-align: center;
@@ -221,7 +223,7 @@ img {
   display: inline-block;
   width: 18px;
   height: 18px;
-  margin: 0 6px;
+  margin: 0 8px;
   background: #FFFFFF;
   border: 5px solid #FFFFFF;
   vertical-align: top;
@@ -296,7 +298,7 @@ img {
   color: var(--basic-dark-blue);
   margin-bottom: 32px;
   margin-top: 16px;
-  margin-bottom: 49px;
+  margin-bottom: 47px;
 }
 
 /* button */
@@ -325,6 +327,7 @@ a {
   background-color: var(--basic-red);
   border: none;
   width: 160px;
+  height: 50px;
   padding: 17px 40px 15px 39px;
 }
 .button-applications {
@@ -335,6 +338,7 @@ a {
   background-color: var(--basic-green);
   border: none;
   width: 160px;
+  height: 50px;
   padding: 17px 40px 15px 39px;
 }
 .button-presentations {
@@ -345,6 +349,7 @@ a {
   background-color: var(--basic-yellow);
   border: none;
   width: 160px;
+  height: 50px;
   padding: 17px 40px 15px 39px;
 }
 .button:hover {
@@ -459,17 +464,21 @@ opacity: 0.1;
 .aside {
   max-width: 660px;
   margin-bottom: 73px;
-  margin-top: 47px;
+  margin-top: 49px;
 }
 .aside-main {
   color: var(--basic-black);
+  padding: 0;
+  margin: 0;
+  padding-top: 37px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
 .aside-title {
+  display: block;
   color: var(--basic-dark-blue);
-  margin-top: 25px;
+  margin-top: 32px;
 }
 .aside-list {
   list-style: none;
@@ -652,12 +661,18 @@ opacity: 0.1;
   margin-bottom: 51.29px;
 }
 .promo-title {
+  display: block;
   color: var(--basic-black);
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  padding: 0;
+  margin: 0;
 }
 .promo {
+  display: block;
+  padding: 0;
+  padding-top: 10px;
   color: var(--basic-gray);
   font-size: 16px;
   line-height: 22px;
@@ -701,7 +716,7 @@ opacity: 0.1;
 }
 .footer-promo {
   margin-left: 140px;
-  margin-top: 7px;
+  margin-top: 5px;
   width: 860px;
 }
 /*popup*/
@@ -721,7 +736,6 @@ opacity: 0.1;
   bottom: 0;
   margin: auto;
   box-sizing: border-box;
-  padding-bottom: 84px;
   border-radius: 5px;
   width: 960px;
   height: 590px;
