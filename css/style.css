@@ -72,6 +72,9 @@ a {
   margin-top: 48.98px;
   z-index: 100;
 }
+.main-logo:active {
+  opacity: 0.3;
+}
 .main-navigation-wrapper {
   display: block;
   padding-right: 45.13px;
@@ -567,12 +570,18 @@ opacity: 0.1;
   list-style: none;
 }
 .costumers-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+.img-button {
   opacity: 0.2;
 }
-.costumers-logo:hover {
+.img-button:hover {
   opacity: 1;
 }
-.costumers-logo:active {
+.img-button:active {
   opacity: 0.1;
 }
 .costumers-list {
@@ -610,12 +619,14 @@ opacity: 0.1;
 }
 .costumers-list li::after {
   content: "";
-  left: 280px;
-  bottom: 35px;
-  position: absolute;
+  display: block;
   width: 2px;
   height: 52px;
   background-color: var(--basic-light-gray);
+  margin-left: 50px;
+}
+.costumers-list li:nth-child(4)::after {
+  display: none;
 }
 /* footer */
 .address {
@@ -738,9 +749,6 @@ opacity: 0.1;
   width: 860px;
 }
 /*popup*/
-.active {
-  display: block;
-}
 .popup {
   display: none;
   position: fixed;
@@ -756,6 +764,9 @@ opacity: 0.1;
   height: 590px;
   background-color: var(--basic-white);
   box-shadow: -1px 12px 19px -5px var(--basic-black);
+}
+.active {
+  display: block;
 }
 .footer-popup {
   padding-top: 80px;

@@ -14,7 +14,7 @@
         <div class="main-menu">
         <div class="main-header-logo">
           <a href="index.html">
-            <img src="img/nerds-logo.svg" width="159.87" height="65.02">
+            <img src="img/nerds-logo.svg" class="main-logo" width="159.87" height="65.02">
           </a>
         </div>
           <div class="main-navigation-wrapper">
@@ -264,27 +264,23 @@
             <a class="button button-contacts" href="#">НАПИШИТЕ НАМ</a>
           </div>
         </div>
-      <div class="popup active">
-        <div class="footer-popup">
-         <button class="button-close" type="button" title="close">Закрыть</button>
-         <h2 class="title-popup">Напишите нам</h2>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="appointment-item" >
-             <label for="appointment-name">Ваше имя:</label>
-            </p>
-              <input class="popup-input" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-              <p class="appointment-item" >
-              <label for="appointment-email">Ваш email:</label>
-            </p>
-              <input class="popup-input" id="appointment-email" type="email" name="email" placeholder="email@example.com">
-              <p class="letter">
-              <label for="appointment-comment">Текст письма:</label>
-            </p>
-               <textarea class="letter-input" id="appointment-comment" name="comment" rows="4" placeholder="В свободной форме"></textarea>
-               <button class="button button-popup" type="submit">Отправить</button>
-          </form>
+        <div class="popup">
+          <div class="footer-popup">
+           <button class="button-close" type="button" title="Закрыть">Закрыть</button>
+           <span class="title-popup">Напишите нам</span>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+               <label class="appointment-item" for="appointment-name">Ваше имя:
+                <input class="popup-input popup-input-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия"></label>
+                <label class="appointment-item" for="appointment-email">Ваш email:
+                <input class="popup-input popup-input-email" id="appointment-email" type="email" name="email" placeholder="email@example.com"></label>
+                <span class="letter">
+                <label for="appointment-comment">Текст письма:</label>
+                </span>
+                 <textarea class="letter-input" id="appointment-comment" name="comment" rows="4" placeholder="В свободной форме"></textarea>
+                 <button class="button button-popup" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
-      </div>
       </section>
       <div class="footer-socials-promo">
       <section class="footer-socials">
@@ -292,19 +288,19 @@
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <img class="socials" src="img/vk-icon.svg" width="26.01" height="15"
+              <img src="img/vk-icon.svg" class="socials" width="26.01" height="15"
               alt="Вконтакте"></a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <img class="socials" src="img/fb-icon.svg" width="12" height="22"
+              <img src="img/fb-icon.svg" class="socials" width="12" height="22"
               alt="Фейсбук"></a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Инстаграм</span>
-              <img class="socials" src="img/insta-icon.svg" width="21" height="21"
+              <img src="img/insta-icon.svg" class="socials" width="21" height="21"
               alt="Инстаграм"></a>
           </li>
         </ul>
