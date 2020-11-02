@@ -279,7 +279,7 @@ a {
 }
 .products-line::after {
   content: "";
-  bottom: -80px;
+  bottom: -95px;
   position: absolute;
   width: 1158px;
   height: 2px;
@@ -519,7 +519,7 @@ opacity: 0.1;
 /* features */
 .features {
   max-width: 360px;
-  margin-top: 49px;
+  margin-top: 50px;
 }
 
 .features-main {
@@ -529,7 +529,7 @@ opacity: 0.1;
   font-weight: bold;
   font-size: 16px;
   margin-top: 32px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
   padding-left: 5px;
 }
 .features-title {
@@ -551,7 +551,7 @@ opacity: 0.1;
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 10px;
   padding: 0;
   color: var(--basic-dark-blue);
   line-height: 18px;
@@ -608,7 +608,7 @@ opacity: 0.1;
 }
 .costumers-lines::before {
   content: "";
-  top: -46px;
+  top: -41px;
   position: absolute;
   width: 1157px;
   height: 2px;
@@ -623,7 +623,7 @@ opacity: 0.1;
   width: 2px;
   height: 52px;
   background-color: var(--basic-light-gray);
-  margin-left: 50px;
+  margin-left: 45px;
 }
 .costumers-list li:nth-child(4)::after {
   display: none;
