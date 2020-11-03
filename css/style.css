@@ -44,7 +44,8 @@ a {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -288,7 +289,8 @@ a {
 .products-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   margin: 0 auto;
   margin-right: 60px;
   padding: 0;
@@ -1003,7 +1005,9 @@ opacity: 0.1;
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .filter-input-checkbox:hover + label {
   color: #283136;
@@ -1285,10 +1289,12 @@ background-image: url("../img/icon-down-dir.svg");
 .page-list {
   display: grid;
   width:760px;
-  column-gap: 11px;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
   list-style: none;
   margin-left: 140px;
   padding: 0;
+  grid-template-columns: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-columns: min-content min-content min-content min-content;
 }
 .button-page {
@@ -1353,6 +1359,7 @@ background-image: url("../img/icon-down-dir.svg");
 .page-body {
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
