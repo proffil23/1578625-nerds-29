@@ -15,7 +15,7 @@
 /* Global */
 
 body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -165,17 +165,17 @@ a {
 }
 
 .slider-item:nth-child(1) {
-  background-image: url(../img/nerds-index-slide1\ 1.png);
+  background-image: url(../img/nerds-index-slide1.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
 .slider-item:nth-child(2) {
-  background-image: url(../img/nerds-index-slide2\ 1.png);
+  background-image: url(../img/nerds-index-slide2.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
 .slider-item:nth-child(3) {
-  background-image: url(../img/nerds-index-slide3\ 1.png);
+  background-image: url(../img/nerds-index-slide3.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -905,7 +905,7 @@ opacity: 0.1;
 .name-catalog {
   padding-top: 42px;
   font-size: 55px;
-  padding-bottom: 70px;
+  padding-bottom: 74px;
 }
 
 .page-catalog {
@@ -920,7 +920,7 @@ opacity: 0.1;
 
 .filter-cost {
   width: 260px;
-  margin-top: 15px;
+  margin-top: 11px;
 }
 .filter fieldset {
   padding: 0;
