@@ -97,6 +97,7 @@ a {
 .navigation-item {
   display: inline-block;
   position: relative;
+  vertical-align: top;
 }
 .active-item::before {
   content: "";
@@ -401,7 +402,7 @@ a {
 }
 .button-contacts {
   width: 220px;
-  padding: 16px 44px 15px 45px;
+  padding: 16px 45px 14px 46px;
   border-radius: 3px;
 }
 .button-contacts:hover {
@@ -611,7 +612,7 @@ opacity: 0.1;
   align-items: center;
   padding: 10px 43px 0px 32px;
   margin: 0 auto;
-  margin-bottom: 47px;
+  margin-bottom: 44px;
 }
 .costumers-lines {
   display: block;
@@ -671,14 +672,23 @@ opacity: 0.1;
 .address {
   position: relative;
   height: 416px;
-  margin-bottom: 75px;
-  width: 1440px;
-  margin: 0 auto;
+  margin-bottom: 68px;
 }
 .map {
   display: block;
+  position: relative;
+  justify-self: center;
+  margin: 0 auto;
+  margin-bottom: 71px;
   height: 416px;
-  width: 1440px;
+  width: 100%;
+}
+.map-container {
+  overflow: hidden;
+}
+.address-map {
+  width: 1160px;
+  margin: 0 auto;
 }
 .address-block {
   position: relative;
@@ -688,18 +698,10 @@ opacity: 0.1;
   box-sizing: border-box;
   position: absolute;
   top: 54px;
-  left: 140px;
   margin: 0 auto;
   background-color: var(--basic-white);
   width: 319px;
   height: 308px;
-}
-.map-point {
-  position: absolute;
-  top: 86px;
-  right: 387px;
-  width: 231px;
-  height: 190px;
 }
 .contacts {
   margin-bottom: 68px;
@@ -752,23 +754,6 @@ opacity: 0.1;
 }
 .catalog-footer {
   margin-top: 55px;
-}
-.map {
-  display: block;
-  position: relative;
-  width: 100%;
-  justify-self: center;
-  margin-bottom: 71px;
-}
-.map::after {
-  content: "";
-  position: absolute;
-  right: 387px;
-  top: 86px;
-  width: 231px;
-  height: 190px;
-  background-image: url("../img/map-marker\ 1.png");
-  z-index: 100;
 }
 .footer-socials-promo {
   display: flex;
@@ -839,6 +824,7 @@ opacity: 0.1;
 }
 .popup-input {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   line-height: 18px;
   padding: 16px 14px 16px 16px;
@@ -862,6 +848,7 @@ opacity: 0.1;
 }
 .letter-input {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   line-height: 18px;
   padding-top: 16px;
@@ -1009,6 +996,7 @@ opacity: 0.1;
 
 .filter-title {
   display: inline-block;
+  vertical-align: bottom;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
@@ -1036,7 +1024,8 @@ opacity: 0.1;
 }
 .checkbox-title {
   display: inline-block;
-  margin-top: 31px;
+  vertical-align: bottom;
+  margin-top: 33px;
   padding-bottom: 10px;
 }
 .cost-item {
@@ -1054,21 +1043,28 @@ opacity: 0.1;
      -moz-user-select: none;
           user-select: none;
 }
-.filter-input-checkbox:hover + label {
-  color: #283136;
+.filter-input-checkbox:hover + label::before {
+  opacity: 1;
+  color: #4D4D4D;
+}
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.1;
+  color: #4D4D4D;
 }
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -36px;
-  top: 0;
+  top: 3x;
   width: 25px;
   height: 23px;
   background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
+  color: #4D4D4D;
 }
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1079,6 +1075,14 @@ opacity: 0.1;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.filter-input-radio:hover + label::before {
+  color: #4D4D4D;
+  opacity: 1;
+}
+.filter-input-radio:disabled + label::before {
+  opacity: 0.1;
+  color: #4D4D4D;
+}
 .filter-input-radio {
   height: 99px;
 }
@@ -1086,14 +1090,15 @@ opacity: 0.1;
   content: "";
   position: absolute;
   left: -36px;
-  top: -1;
+  top: 2px;
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
 }
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked + label::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -1119,16 +1124,18 @@ opacity: 0.1;
 }
 .sort-list {
   display: inline-block;
+  vertical-align: bottom;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   list-style: none;
   color: var(--basic-black);
   list-style: none;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 .sort-name {
   display: inline-block;
+  vertical-align: bottom;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -1136,6 +1143,7 @@ opacity: 0.1;
 }
 .sort-item {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 18px;
   margin-left: 22px;
@@ -1146,10 +1154,13 @@ opacity: 0.1;
 }
 .sort-toggle-list {
   display: inline-block;
+  vertical-align: top;
   margin-left: 38px;
+  margin-top: 21px;
 }
 .sort-toggle {
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
 }
 .sort-toggle-down {
@@ -1165,7 +1176,7 @@ background-image: url("../img/icon-down-dir.svg");
 }
 /* ПРОЕКТЫ */
 .projects {
-  margin-top: 15px;
+  margin-top: 12px;
   margin-bottom: 0;
   margin-left: 2px;
 }
